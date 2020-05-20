@@ -1,0 +1,37 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Login</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-item>
+        <ion-img src="../../../assets/images/logo.jpg"></ion-img>
+    </ion-item>
+    <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+        <ion-label color="danger" *ngIf="invalidLogin">El usuario no está registrado o la contraseña que ingresó es incorrecta.</ion-label>
+
+        <ion-item>
+            <ion-label position="floating">Correo</ion-label>
+            <ion-input type="correo" id="correo" name="correo" ngModel class="form-control" placeholder="Ingresa tu correo electrónico" required autofocus></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-label position="floating">Contraseña</ion-label>
+            <ion-input type="password" id="contrasena" name="contrasena" ngModel class="form-control" placeholder="Contraseña" required></ion-input>
+        </ion-item>
+        
+        <ion-item>
+            <ion-label position="floating">Seleccionar Rol</ion-label>
+            <ion-select id="rol" name="rol" ngModel class="form-control" value="Rol" okText="Aceptar" cancelText="Cancelar">
+                <ion-select-option value="Administrador">Administrador</ion-select-option>
+                <ion-select-option value="Cliente">Cliente</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-button color="success" expand="full" type="submit">Iniciar Sesión</ion-button>
+        <ion-button color="primary" expand="full" type="button" (click)="register()">Registrar nuevo usuario</ion-button>
+
+    </form>
+</ion-content>

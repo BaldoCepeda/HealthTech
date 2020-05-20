@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <!-- <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons> -->
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Detalle de aditivos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="additive_header">
+      <ion-grid style="height: 100%">
+          <ion-row justify-content-center align-items-center style="height: 100%">
+            <h1>{{title_additive}}</h1>
+          </ion-row>
+      </ion-grid>
+  </div>
+  <div class="ion-padding ion-text-justify">
+      <p><b>Tipo: </b>{{Type}}</p>
+      <p><b>Origen: </b>{{Origin}}</p>
+      <p><b>Uso: </b></p>
+      <p>{{Use}}</p>
+      <p><b>Posibles efectos adversos: </b></p>
+      <p>{{Effects}}</p>
+      <p><b>Toxicidad: </b>{{Toxicity}}</p>
+  </div>
+</ion-content>

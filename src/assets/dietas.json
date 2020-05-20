@@ -1,0 +1,36 @@
+{
+    "items": [
+        {
+            "name": "Dieta para aumentar masa muscular",
+            "children": [
+                "Desayunos",
+                "Comidas",
+                "Cenas"
+            ]
+        },
+        {
+            "name": "Dieta para bajar de peso",
+            "children": [
+                "Desayunos",
+                "Comidas",
+                "Cenas"
+            ]
+        },
+        {
+            "name": "Dieta para mantener tu figura",
+            "children": [
+                "Desayunos",
+                "Comidas",
+                "Cenas"
+            ]
+        },
+        {
+            "name": "Dieta para una piel sana",
+            "children": [
+                "Desayunos",
+                "Comidas",
+                "Cenas"
+            ]
+        }
+    ]
+}

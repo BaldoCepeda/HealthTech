@@ -1,0 +1,7 @@
+{
+  "name": "FreeWaiter",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

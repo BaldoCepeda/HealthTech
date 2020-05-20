@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar color="danger">
+        <ion-title>
+            Escaner
+        </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content class="ion-padding">
+    <h1 class="title">Click Button To Scan</h1>
+ 
+    <ion-button (click)="scanCode()" expand="full" padding="15">
+      Scan Code
+    </ion-button>
+     
+    <div *ngIf="scannedData" class="content-class">
+      <p>
+        Scanned Code Text : <b>{{ scannedData["text"] }}</b>
+      </p>
+      <p>
+        Scanned Code Format : <b>{{ scannedData["format"] }}</b>
+      </p>
+      <p>
+        Scanned Product is: <b>{{ scannedProduct }}</b>
+      </p>
+    </div>
+
+    <ion-button color="success" (click)="seeAditives()" expand="full" padding="15">Go to additives</ion-button>
+
+    <ion-button class="gravity" expand="full" color="danger" (click)="logout()" padding="15">Logout</ion-button>
+  </ion-content>
